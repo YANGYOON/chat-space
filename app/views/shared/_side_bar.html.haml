@@ -10,8 +10,10 @@
           =icon('fas', 'edit')
 
   .groups
-    .group
-      .group__group-name
-      sample
-      .group__latest-message
-      good bye world
+    - current_user.groups.each do |group|    
+      .group
+        = link_to '#' do
+          .group__name
+            = group.name
+          .group__message
+            no message
