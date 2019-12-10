@@ -11,14 +11,8 @@
         Edit
     
     .messages
-      .message
-        .message__upper-info
-          .message__upper-info__talker
-            shouya
-          .message__upper-info__date
-            2019/10/08/19:00:00
-        .message__text
-          this is the first message
+      = render @messages
+
 
     .form
       = form_for [@group, @message] do |f|
