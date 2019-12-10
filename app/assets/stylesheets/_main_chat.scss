@@ -75,6 +75,7 @@
       display: flex;
       
       .input-box {
+        display: flex;
         position: relative;
         width: 100%;
         &__text {
@@ -91,9 +92,9 @@
           right: 10px;
           cursor: pointer;
         }
-        .hidden {
-          display: none;
-        }
+          .hidden {
+            display: none;
+          }
       }
       
       .submit-btn {
